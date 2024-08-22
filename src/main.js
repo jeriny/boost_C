@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import App from './pages/App';
 import Group from './pages/Group';
-import MakeGroup from './pages/makeGroup';
+import MakeGroup from './pages/MakeGroup';
 import GroupAccess from './pages/GroupAccess';
 import GroupEditModal from './pages/GroupEditModal';
 
@@ -11,10 +11,10 @@ function Main() {
     <BrowserRouter>
       <App>
         <Routes>
-        <Route path="/" element={<Navigate replace to="/group/makegroup" />} />
+        <Route path="/" element={<Navigate replace to="/group/Makegroup" />} />
           <Route path="group">
             <Route index element={<Group />} />
-            <Route path="makegroup" element={<MakeGroup />} />
+            <Route path="Makegroup" element={<MakeGroup />} />
             <Route path="GroupAccess" element={<GroupAccess />} />
             <Route path="GroupEditModal" element={<GroupEditModal />} />
           </Route>
